@@ -17,14 +17,14 @@ a {
 /* タイトル */
 .main {
     align-items: center;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     height: 85vh;
     text-align: center;
     position: relative;
 }
 .main-inner {
-    padding: 0 40px;
+    /* padding: 0 40px; */
     position: absolute;
     width: 100%;
     top: 50%;
