@@ -14,10 +14,18 @@ a {
     color: #1ca9e3;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border-style: none;
+}
+
 /* タイトル */
+
 .main {
     align-items: center;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     height: 85vh;
     text-align: center;
@@ -55,7 +63,7 @@ a {
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
 }
 
@@ -99,6 +107,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -40px;
+    justify-content: space-between;
 }
 .deliverables {
     width: 31.74603%;
@@ -115,6 +124,7 @@ a {
 }
 .deliverables_img img {
     border: 1px solid #e6e6e6;
+    box-shadow: 12px 12px 2px 1px rgba(172, 172, 247, 0.2);
 }
 .deliverables_name {
     font-size: 12px;
@@ -136,6 +146,7 @@ a {
     justify-content: space-between;
     margin-bottom: 5%;
     text-align: center;
+    width: 100%;
 }
 
 .skill-item {
@@ -217,3 +228,45 @@ a {
 .About-text p:not(:last-child) {
     margin-bottom: 30px;
 }
+
+    /*  メインビジュアル */
+    .main {
+        height: 75vh;
+    }
+
+    .main-inner {
+        padding: 0 20px;
+    }
+
+
+
+    .article {
+        padding: 80px 0;
+    }
+    
+    .article-inner {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .article-title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .article-img {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+        border: 1.5px solid #e6e6e6;
+    }
+    
+    .article-body {
+        max-width: 720px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
