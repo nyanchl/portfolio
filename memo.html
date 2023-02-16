@@ -5,27 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nyanchl Portfolio</title>
-    <!-- <link rel="stylesheet" href="style/stylesheet.css"> -->
+    <link rel="stylesheet" href="style/stylesheet.css">
 </head>
 <body>
-    <div class="title">
+    <header class="header">
         <div class="inner">
-            <div class="title-name">
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="#works">WORKS</a></li>
+                <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+                <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <div class="article">
+        <div class="article-inner">
+            <div class="article-title">
                 <h2>メモアプリ</h2>
             </div>
-            <img src="img/memoapp.png" alt=""/>
-            <div class="detail">
+            <div class="article-img">
+                <img src="img/memoapp.png" alt=""/>
+            </div>
+            <div class="article-body">
                 <p>一般的なメモアプリです。</p>
                 <h3>アプリ作成の動機</h3>
                 <p>pythonを勉強し始めた時に、何かwebアプリを作りたいなと思い勉強がてらに作りました。</p>
                 <h3>機能</h3>
-                <p>タイトル・内容を登録でき、メモが作られた順にソートされます。</p>
+                <ul>
+                    <li>タイトル・内容を作成</li>
+                    <li>メモが作られた順にソート</li>
+                </ul>
                 <h3>使用したもの</h3>
                 <table>
                     <tr>
-                        <td></td>
+                        <td>
+                            <img src="img/python.png" alt="">
+                            <p>Python</p>
+                        </td>
+                        <td>
+                            <img src="img/django.png" alt="">
+                            <p>Django</p>
+                        </td>
+                        <td>
+                            <img src="img/SQLite.png" alt="">
+                            <p>SQLite</p>
+                        </td>
+                        <td>
+                            <img src="img/html.png" alt="">
+                            <p>HTML</p>
+                        </td>
+                        <td>
+                            <img src="img/css.png" alt="">
+                            <p>CSS</p>
+                        </td>
                     </tr>
                 </table>
+                <h3>URL</h3>
+                <p>GitHub</p>
+                <p><a href="https://github.com/nyanchl/Memo">https://github.com/nyanchl/Memo</a></p>
             </div>
         </div>
     </div>

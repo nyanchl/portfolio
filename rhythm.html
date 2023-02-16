@@ -5,31 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nyanchl Portfolio</title>
-    <!-- <link rel="stylesheet" href="style/stylesheet.css"> -->
+    <link rel="stylesheet" href="style/stylesheet.css">
 </head>
 <body>
-    <div class="title">
+    <header class="header">
         <div class="inner">
-            <div class="title-name">
-                <h2>training_rhythm</h2>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="#works">WORKS</a></li>
+                <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+                <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <article class="article">
+        <div class="article-inner">
+            <div class="article-title">
+                <h2>音楽ゲーム</h2>
             </div>
-            <img src="img/rhythm.png" alt=""/>
-            <div class="detail">
-                <p>キーボードタッチで遊べる音楽ゲームです。</p>
+            <div class="article-img">
+                <img src="img/rhythm.png" width="1000" height="1000" alt=""/>
+            </div>
+            <div class="article-body">
+                <p>キーボードタッチ音楽ゲーム</p>
                 <h3>アプリ作成の動機</h3>
                 <p>自分のお気に入りの曲で音楽ゲームしたかったので、作りました。</p>
                 <h3>機能</h3>
-                <p>キーを押すとオブジェクトからrayが発射され、そのrayがノーツに当たるとノーツが消えるようになっています。ノーツを消すとscoreが加算されます(消す場所によってscoreの加算数が変わります)。</p>
-                <h3>感想</h3>
-                <p>csvファイルにノーツを降らせる時間や場所を手書きで作ったのでかなり大変だった。</p>
+                <ul>
+                    <li>comboの加算</li>
+                    <li>scoreの加算</li>
+                    <li>ノーツの削除</li>
+                    <li>ノーツの削除時のSE</li>
+                </ul>
                 <h3>使用したもの</h3>
                 <table>
                     <tr>
-                        <td></td>
+                        <td>
+                            <img src="img/unity.png" alt="" width="300" height="200">
+                            <p>Unity</p>
+                        </td>
+                        <td>
+                            <img src="img/csharp.svg" alt="" width="100" height="100">
+                            <p>C#</p>
+                        </td>
+                        <td>
+                            <img src="img/csv.png" alt="" width="150" height="150">
+                            <p>CSV</p>
+                        </td>
                     </tr>
                 </table>
             </div>
         </div>
-    </div>
+    </article>
 </body>
 </html>
