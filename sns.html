@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Nyanchl Portfolio</title>
     <link rel="stylesheet" href="style/stylesheet.css">
 </head>
@@ -12,9 +13,9 @@
         <div class="inner">
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-item"><a href="#works">WORKS</a></li>
-                <li class="header-nav-item"><a href="#skill">SKILL</a></li>
-                <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+                <li class="header-nav-item"><a href="./index.html#works">WORKS</a></li>
+                <li class="header-nav-item"><a href="./index.html#skill">SKILL</a></li>
+                <li class="header-nav-item"><a href="./index.html#about">ABOUT</a></li>
             </ul>
         </nav>
         </div>
@@ -25,12 +26,26 @@
             <div class="article-title">
                 <h2>SNS(制作途中)</h2>
             </div>
-            <div class="article-img">
-                <img src="img/snsapp.png" width="1000" height="1000" alt=""/>
+
+            <div class="article-container">
+                <div class="article-img js-main-img">
+                    <img src="img/snsapp.png" alt=""/>
+                </div>
+                <div class="article-item">    
+                <ul class="sub-img js-sub-img">
+                    <li>
+                        <img class="home-img" src="img/snsapp.png" alt=""/>
+                    </li>
+                    <li class="current">
+                        <img src="img/post.gif">
+                    </li>
+                    <li>
+                        <img src="img/followandlike.gif">
+                    </li>
+                </ul>
+                </div>
             </div>
-            <div class="article-img">
-                <img src="img/post.gif">
-            </div>
+            
             <div class="article-body">
                 <p>ネガティブな文章をなくすSNS</p>
                 <h3>アプリ作成の動機</h3>
@@ -74,3 +89,19 @@
     </article>
 </body>
 </html>
+<script>
+$(function () {
+  $(".js-sub-img img").on("click", function () {
+    img = $(this).attr("src");
+    $(".js-sub-img li").removeClass("current");
+    $(this).parent().addClass("current");
+    $(".js-main-img img").fadeOut(500, function () {
+      $(".js-main-img img")
+        .attr("src", img)
+        .on("load", function () {
+          $(this).fadeIn(500);
+        });
+    });
+  });
+});
+</script>
