@@ -11,6 +11,9 @@
 <body>
     <header class="header">
         <div class="inner">
+            <h1 class="header-logo">
+                <a href="./index.html">nyanchl</a>
+            </h1>
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item"><a href="./index.html#works">WORKS</a></li>
@@ -24,7 +27,8 @@
     <article class="article">
         <div class="article-inner">
             <div class="article-title">
-                <h2>SNS(制作途中)</h2>
+                <h1>SNS(制作途中)</h1>
+                <p>ネガティブな文章をなくすSNS</p>
             </div>
 
             <div class="article-container">
@@ -47,15 +51,18 @@
             </div>
             
             <div class="article-body">
-                <p>ネガティブな文章をなくすSNS</p>
                 <h3>アプリ作成の動機</h3>
                 <p>誹謗中傷をなくしたいという思いからこのアプリを作ることにしました。</p>
-                <h3></h3>
-                <p></p>
+                <h3>説明</h3>
+                <p>最初に、ユーザー関連についてです。Djangoにはデフォルトで用意されているUserモデルが存在しますが、それでは私のやりたい機能を実装することができなかったので、自分でUserモデルをカスタマイズしました。
+                <br>次に、SNS関連についてです。現状では私がやりたい機能ができていませんが、投稿した文章を自然言語処理(形態素解析)を用いてネガティブかポジティブかを判断して、ネガティブな文章をなくすSNSを作っていきたいと思っています。また、メモアプリのCRUD機能を活かすことができました。
+                </p>
                 <h3>機能</h3>
                 <ul>
+                    <h4>ユーザー関連</h4>
                     <li>アカウント登録</li>
                     <li>ログイン・ログアウト機能</li>
+                    <h4>SNS関連</h4>
                     <li>投稿の作成・削除・編集</li>
                     <li>投稿の一覧表示</li>
                     <li>いいね機能</li>
@@ -68,19 +75,15 @@
                     <tr>
                         <td>
                             <img src="img/python.png" alt="">
-                            <p>Python</p>
                         </td>
                         <td>
                             <img src="img/django.png" alt="">
-                            <p>Django</p>
                         </td>
                         <td>
                             <img src="img/SQLite.png" alt="">
-                            <p>SQLite</p>
                         </td>
                         <td>
                             <img src="img/html.png" alt="">
-                            <p>HTML</p>
                         </td>
                     </tr>
                 </table>
@@ -95,11 +98,11 @@ $(function () {
     img = $(this).attr("src");
     $(".js-sub-img li").removeClass("current");
     $(this).parent().addClass("current");
-    $(".js-main-img img").fadeOut(500, function () {
+    $(".js-main-img img").fadeOut(400, function () {
       $(".js-main-img img")
         .attr("src", img)
         .on("load", function () {
-          $(this).fadeIn(500);
+          $(this).fadeIn(400);
         });
     });
   });

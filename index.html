@@ -7,16 +7,20 @@
     <title>Nyanchl Portfolio</title>
     <link rel="stylesheet" href="style/stylesheet.css">
 </head>
-<body>
+<body class="index-body">
+<div class="wrapper">
     <header class="header">
         <div class="inner">
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-item"><a href="#works">WORKS</a></li>
-                <li class="header-nav-item"><a href="#skill">SKILL</a></li>
-                <li class="header-nav-item"><a href="#about">ABOUT</a></li>
-            </ul>
-        </nav>
+            <h1 class="header-logo">
+                <a href="./index.html">nyanchl</a>
+            </h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a href="#works">WORKS</a></li>
+                    <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+                    <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -26,7 +30,7 @@
         </div>
     </div>
 
-    <div class="Works" id="works">
+    <section class="Works section" id="works">
         <div class="inner">
             <h2 class="subtitle">WORKS</h2>
             <div class="deliverableslist">
@@ -50,34 +54,30 @@
                     </div>
                 </div>
         </div>
-    </div>
+    </section>
 
-    <div class="skill" id="skill">
+    <section class="skill section" id="skill">
         <div class="inner">
             <h2 class="subtitle">SKILL</h2>
             <div class="skill-list">
                 <div class="skill-item">
-                    <div class="skill-body-1">
-                        <div class="skill-text">
-                            <div class="star-1">
-                                <h2>★</h2>
-                                <h3>C#</h3>
-                                <h3>HTML</h3>
-                                <h3>CSS</h3>
-                            </div>
+                    <div class="skill-body">
+                        <div class="skill-text-1">
+                            <h2 class="star">★</h2>
+                            <h3>C#</h3>
+                            <h3>HTML</h3>
+                            <h3>CSS</h3>
                         </div>
                     </div>
-                    <div class="skill-body-2">
-                        <div class="skill-text">
-                            <div class="star-2">
-                                <h2>★★</h2>
-                                <h3>Python</h3>
-                            </div>
+                    <div class="skill-body">
+                        <div class="skill-text-2">
+                            <h2 class="star">★★</h2>
+                            <h3>Python</h3>
                         </div>
                     </div>
                 </div>
                 <div class="skill-body">
-                    <div class="skill-star-text1">
+                    <div class="skill-star-text">
                         <div class="star-1">
                             <div class="skill-star-1">
                                 <br>★ -触ったことはある</br>
@@ -88,24 +88,29 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="about" id="about">
+    <section class="about section" id="about">
         <div class="inner">
             <h2 class="subtitle">ABOUT</h2>
                 <div class="About-text">
+                    <!-- <div>
+                        <img class="bio-img" src="img/nyanchl.png" width="100" height="100">
+                    </div> -->
                     <p>
                         趣味：運動 (休日にバスケなどをします)<br>
                         &emsp;&emsp;&emsp;Atcoder (暇な時に過去問を解いたりしてます)<br>
                         &emsp;&emsp;&emsp;ゲーム (最近はアクションRPGにハマってます)<br>
-                        <br>Nyanchl(名前)はニックネームです
+                        <br>nyanchl(名前)はニックネームです
                         読み方はにゃんちです<br>
-                        <br>普段は自分が思い付いたものを作ったりしています<br>
-                        <br>Web系をやってます(主にバックエンドをやっています)。<br>
+                        <br>普段は自分が面白そうだなっと思ったものを作ったりしています<br>
+                        Web系をやってます(主にバックエンドをやっています)<br>
+                        フロントエンド・デザインも勉強していきたいです<br>
                         最近は自然言語処理に興味があります
                     </p>
                 </div>
         </div>
-    </div>
+    </section>
+</div>
 </body>
 </html>

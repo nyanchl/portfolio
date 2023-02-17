@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nyanchl Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style/stylesheet.css">
 </head>
 <body>
     <header class="header">
         <div class="inner">
+            <h1 class="header-logo">
+                <a href="./index.html">nyanchl</a>
+            </h1>
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item"><a href=./index.html#works">WORKS</a></li>
@@ -24,12 +28,24 @@
         <div class="article-inner">
             <div class="article-title">
                 <h2>音楽ゲーム</h2>
+                <p>キーボードタッチ音楽ゲーム</p>
             </div>
-            <div class="article-img">
-                <img src="img/rhythm.png" width="1000" height="1000" alt=""/>
+            <div class="article-container">
+                <div class="article-img js-main-img">
+                    <img src="img/rhythm.png" alt=""/>
+                </div>
+                <div class="article-item">    
+                    <ul class="sub-img js-sub-img">
+                        <li>
+                            <img class="home-img" src="img/rhythm.png" alt=""/>
+                        </li>
+                        <li class="current">
+                            <img src="img/rhythm.gif">
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="article-body">
-                <p>キーボードタッチ音楽ゲーム</p>
                 <h3>アプリ作成の動機</h3>
                 <p>自分のお気に入りの曲で音楽ゲームしたかったので、作りました。</p>
                 <h3>機能</h3>
@@ -44,15 +60,12 @@
                     <tr>
                         <td>
                             <img src="img/unity.png" alt="" width="300" height="200">
-                            <p>Unity</p>
                         </td>
                         <td>
                             <img src="img/csharp.svg" alt="" width="100" height="100">
-                            <p>C#</p>
                         </td>
                         <td>
-                            <img src="img/csv.png" alt="" width="150" height="150">
-                            <p>CSV</p>
+                            <img src="img/csv.png" alt="" width="110" height="110">
                         </td>
                     </tr>
                 </table>
@@ -61,3 +74,19 @@
     </article>
 </body>
 </html>
+<script>
+    $(function () {
+      $(".js-sub-img img").on("click", function () {
+        img = $(this).attr("src");
+        $(".js-sub-img li").removeClass("current");
+        $(this).parent().addClass("current");
+        $(".js-main-img img").fadeOut(400, function () {
+          $(".js-main-img img")
+            .attr("src", img)
+            .on("load", function () {
+              $(this).fadeIn(400);
+            });
+        });
+      });
+    });
+    </script>
