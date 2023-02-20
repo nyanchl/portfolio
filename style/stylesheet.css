@@ -216,15 +216,6 @@ img {
 }
 
 /* about */
-
-.profile-body {
-    flex: 1;
-}
-
-.profile-body p:not(:last-child) {
-    margin-bottom: 30px;
-}
-
 .About-text {
     display: flex;
     flex-wrap: wrap;
@@ -239,6 +230,15 @@ img {
 .About-text p:not(:last-child) {
     margin-bottom: 30px;
 }
+
+.profile-body {
+    flex: 1;
+}
+
+.profile-body p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 
 .profile-img {
     width: 20%;
@@ -258,6 +258,13 @@ img {
 .main-inner {
     padding: 0 20px;
 }
+
+.mail {
+    font-size:15px;
+}
+
+
+
 
 
 
