@@ -217,6 +217,14 @@ img {
 
 /* about */
 
+.profile-body {
+    flex: 1;
+}
+
+.profile-body p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 .About-text {
     display: flex;
     flex-wrap: wrap;
