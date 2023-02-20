@@ -306,6 +306,9 @@ max-width: 500px;
 height: 334px;
 width: 100%;
 }
+.js-main-img-rhythm {
+    width: 100%;
+    }
 .js-main-img img {
 height: auto;
 width: 100%;
