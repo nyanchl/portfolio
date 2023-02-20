@@ -31,13 +31,13 @@
                 <p>キーボードタッチ音楽ゲーム</p>
             </div>
             <div class="article-container">
-                <div class="article-img js-main-img">
+                <div class="article-img js-main-img-rhythm">
                     <img src="img/rhythm.png" alt=""/>
                 </div>
                 <div class="article-item">    
                     <ul class="sub-img js-sub-img">
                         <li>
-                            <img class="home-img" src="img/rhythm.png" alt=""/>
+                            <img class="home-img-1" src="img/rhythm.png" alt=""/>
                         </li>
                         <li class="current">
                             <img src="img/rhythm.gif">
@@ -80,8 +80,8 @@
         img = $(this).attr("src");
         $(".js-sub-img li").removeClass("current");
         $(this).parent().addClass("current");
-        $(".js-main-img img").fadeOut(400, function () {
-          $(".js-main-img img")
+        $(".js-main-img-rhythm img").fadeOut(400, function () {
+          $(".js-main-img-rhythm img")
             .attr("src", img)
             .on("load", function () {
               $(this).fadeIn(400);
