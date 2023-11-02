@@ -28,53 +28,59 @@
     <article class="article">
         <div class="article-inner">
             <div class="article-title">
-                <h1>SNS(制作途中)</h1>
-                <p>ネガティブな文章をなくすSNS</p>
+                <h1>SNS</h1>
+                <p>ネガティブな投稿を非表示にできるSNS</p>
             </div>
-
             <div class="article-container">
                 <div class="article-img js-main-img">
-                    <img src="img/snsapp.png" alt=""/>
+                    <div class="main-img">
+                        <img src="img/sns_index.png" alt=""/>
+                    </div>
                 </div>
                 <div class="article-item">    
-                <ul class="sub-img js-sub-img">
-                    <li>
-                        <img class="home-img-3" src="img/snsapp.png" alt=""/>
-                    </li>
-                    <li>
-                        <img src="img/account.gif">
-                    </li>
-                    <li>
-                        <img src="img/post.gif">
-                    </li>
-                    <li>
-                        <img class="last-sub-img" src="img/followandlike.gif">
-                    </li>
-                </ul>
+                    <div class="sub-img js-sub-img">
+                        <li class="current">
+                            <img class="sns-sub-img-size first-sub-img" src="img/sns_index.png" alt=""/>
+                        </li>
+                        <li>
+                            <img class="sns-sub-img-size" src="img/sns_login.gif">
+                        </li>
+                        <li>
+                            <img class="sns-sub-img-size" src="img/post.gif">
+                        </li>
+                        <li>
+                            <img class="sns-sub-img-size" src="img/followandlike.gif">
+                        </li>
+                        <li>
+                            <img class="sns-sub-img-size last-sub-img" src="img/negative_function.gif">
+                        </li>
+                    </div>
                 </div>
             </div>
             
             <div class="article-body">
-                <h3>アプリ作成の動機</h3>
-                <p>誹謗中傷をなくしたいという思いからこのアプリを作ることにしました。</p>
-                <h3>説明</h3>
-                <p>最初に、ユーザー関連についてです。Djangoにはデフォルトで用意されているUserモデルが存在しますが、それでは私のやりたい機能を実装することができなかったので、自分でUserモデルをカスタマイズしました。
-                <br>次に、SNS関連についてです。現状では私がやりたい機能ができていませんが、投稿した文章を自然言語処理(形態素解析)を用いてネガティブかポジティブかを判断して、ネガティブな文章をなくすSNSを作っていきたいと思っています。また、<strong><a href="./memo.html">メモアプリ</a></strong>のCRUD機能を活かすことができました。
-                </p>
-                <h3>機能</h3>
-                <ul>
-                    <h4>ユーザー関連</h4>
-                    <li>アカウント登録</li>
-                    <li>ログイン・ログアウト機能</li>
-                    <h4>SNS関連</h4>
-                    <li>投稿の作成・削除・編集</li>
-                    <li>投稿の一覧表示</li>
-                    <li>いいね機能</li>
-                    <li>ユーザーのプロフィール</li>
-                    <li>ユーザー自身の投稿の一覧表示</li>
-                    <li>フォロー・フォロー解除</li>
-                </ul>
-                <h3>使用したもの</h3>
+                <p class="heading">アプリ作成の動機</p>
+                <p class="description-detail">誹謗中傷をなくしたいという思いからこのアプリを作ることにしました。</p>
+                <p class="heading">説明</p>
+                <p class="description-detail">最初に、ユーザー関連についてです。Djangoにはデフォルトで用意されているUserモデルが存在しますが、それでは私の作りたい機能を実装することができなかったので、自分でUserモデルをカスタマイズしました。
+                <br>次に、SNS関連についてです。投稿した文章を自然言語処理(形態素解析)を用いてネガティブかポジティブかを判断して、ネガティブな投稿を非表示にできるSNSを制作しました。また、<strong><a href="./memo.html">メモアプリ</a></strong>のCRUD機能を活かすことができました。
+                <p class="heading">苦労した点</p>
+                <p class="description-detail">制作期間一年間半を経て、一番苦労したなと思う機能はいいね機能です。</p>
+                <p class="heading">機能</p>
+                <p class="font-size-h4">ユーザー関連</p>
+                <li>アカウント登録</li>
+                <li>ログイン・ログアウト機能</li>
+                <p class="font-size-h4">SNS関連</p>
+                <li>投稿の作成・削除・編集</li>
+                <li>投稿の一覧表示</li>
+                <li>いいね</li>
+                <li>ユーザーのプロフィール</li>
+                <li>ユーザー自身の投稿の一覧表示</li>
+                <li>フォロー・フォロー解除</li>
+                <li>ネガティブな投稿をフィルタリングする</li>
+                <li>投稿した投稿内容がネガティブだった場合の通知</li>
+                
+                <p class="heading">使用したもの</p>
                 <table>
                     <tr>
                         <td>
@@ -88,6 +94,9 @@
                         </td>
                         <td>
                             <img src="img/html.png" alt="">
+                        </td>
+                        <td>
+                            <img src="img/css.png" alt="">
                         </td>
                     </tr>
                 </table>
